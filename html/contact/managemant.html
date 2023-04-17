@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variteks</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="jpg" href="/image/logoImg/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container-fluid font-['Manrope']">
+        <section>
+            <nav class="w-full px-8 min-h-[10vh] justify-center flex bg-white/60 z-[997] fixed">
+                <div class="logo w-[40%] min-h-[10vh] gap-4 justify-center flex items-center">
+                    <div>
+                        <a href="../index.html"><img src="/image/logo/Без названия (1).png" class="w-[200px]" alt="logo"></a>
+                    </div>
+                    <a href="#">
+                        <div
+                            class="px-4 py-5 text-[18px] text-white h-[25px] hover:border-[1.5px] hover:border-red-500 duration-300 hover:bg-white hover:text-red-500 flex justify-center items-center rounded-md bg-red-700">
+                            Cвяжитесь с нами
+                        </div>
+                    </a>
+                </div>
+                <div class="menu w-[50%] min-h-[10vh] flex justify-center items-center">
+                    <ul class="text-[18px] text-red-500 flex gap-1 z-[999]">
+                        <li><a href="../aboutUs.html"
+                                class="hover:text-white duration-300 w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">О
+                                нас</a></li>
+                        <li><a href="#" id="href-link"
+                                class="w-[180px] hover:text-white duration-300 justify-center items-center rounded-md hover:bg-red-600 flex"
+                                onclick="hrefLink()">Наша продукция</a>
+                        </li>
+                        <li><a href="../blog.html"
+                                class="hover:text-white duration-300  w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">Блог</a>
+                        </li>
+                        <li><a href="#"
+                                class="w-[110px] justify-center duration-300 hover:text-white items-center rounded-md hover:bg-red-600 flex"
+                                onclick="Contact()">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="logo-branding w-[20%] min-h-[10vh] flex justify-center items-center text-red-500">
+                    <div class="text-[18px] flex gap-3 items-center">
+                        <a href="./navbar/search.html"
+                            class="w-[45px] rounded-md flex justify-center items-center hover:bg-red-600 hover:text-white duration-300 h-[33px]"><i
+                                class="fas fa-search"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <div
+                            class="langugage w-[50px] h-[25px] rounded-md cursor-pointer flex-col relative text-white bg-red-500 flex justify-center items-center gap-1">
+                            <div class="far h-[25px] flex text-[13px] justify-center items-center gap-1 px-3"
+                                onclick="languageToggle()">
+                                <span id="lang">RU</span>
+                                <i class="chevron fas fa-chevron-down text-[10px]"></i>
+                            </div>
+                            <div class="language-menu w-full h-[45px] absolute top-[110%] z-[999] bg-red-500">
+                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">RU</div>
+                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">UZ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    <div class="link w-full min-h-[90vh] flex justify-evenly pt-[80px] gap-4">
+        <div class="link-item">
+            <ul class=" flex flex-col gap-1">
+                <li
+                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-[#fff] text-[20px]">
+                    <a href="../production/production.html">Ортопедические
+                        Изделия</a>
+                </li>
+                <li class="mt-5 hover:text-red-600"><a href="../production/product.html">Воротники Для Фиксации <br>
+                        Шейных Позвонков</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Брюшные Корсеты</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Наколенники</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Ортопедические Подушки</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Бандажи Для Плечевого И <br>
+                        Локтевого Суставов</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Ортопедические Подушки</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Поясничные Корсеты</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Бандажи И Шины Для Руки</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Шины-Бандажи На Запястье</a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Бандажи Для Голеностопного</a>
+                </li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Сустава И Стопы </a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Сустава И Стопы
+                        Силиконовая Продукция </a></li>
+                <li class="hover:text-red-600"><a href="../production/product.html">Эластичные Бандажи И Другая
+                        Продукция </a></li>
+            </ul>
+        </div>
+        <div class="link-item">
+            <ul class="text-[16px] flex flex-col gap-1">
+                <li
+                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[20px]">
+                    <a href="../antiVaricose/antiVaricose.html">Антиварикозные
+                        Изделия</a>
+                </li>
+                <li class="mt-5 hover:text-red-600"><a href="../antiVaricose/Compression.html">Комплект Металлический
+                        Для <br> Надевания Чулок</a>
+                </li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Компрессионные Гольфы</a>
+                </li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс I</a></li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс II</a></li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс III</a></li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Антиэмболические
+                        изделия</a>
+                </li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Лимфедеме изделия</a></li>
+                <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Эластичные Изделия</a></li>
+            </ul>
+        </div>
+        <div class="link-item">
+            <ul class="text-[16px] flex flex-col gap-1">
+                <li
+                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]">
+                    <a href="../Liposuction/Liposuction.html">Липосакционные
+                        Корсеты</a>
+                </li>
+                <li class="hover:text-red-600 mt-5"><a href="../Liposuction/Liposuction-page.html">Подтяжка лица</a>
+                </li>
+                <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Липосакции</a></li>
+                <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Абдоминопластика</a>
+                </li>
+                <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Увеличение Уменьшение
+                        Груди</a></li>
+                <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Мужские Корсеты</a></li>
+                <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Вспомогательные
+                        продукты</a></li>
+            </ul>
+        </div>
+        <div class="link-item">
+            <ul class="text-[13px] flex flex-col gap-1">
+                <li
+                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]">
+                    <a href="../LastCategory/last-category.html">Антиварикозные
+                        Изделия на заказ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div
+        class="contactMenu w-[280px]  min-h-[15vh] bg-white flex-col mt-[46px] pl-4  flex justify-evenly rounded-lg left-[67%] text-red-500 text-[14px]">
+        <div class="">
+            <a href="../contact/connect.html" class="text-[18px] text-black hover:text-red-600">Связаться с нами</a>
+        </div>
+        <div class="">
+            <a href="../contact/managemant.html" class="text-[18px] text-black hover:text-red-600">Управление-персоналом</a>
+        </div>
+    </div>
+        <!-- <section><img src="" alt=""> -->
+        <div class="body w-full min-h-[170vh] pb-4">
+            <div
+                class="body-top w-full min-h-[70vh] bg-no-repeat bg-[url('/image/contactHtml/contactBodyHtml/selectPage4.1677f557593ba8dee859.jpg')]">
+            </div>
+            <div class="w-full min-h-[150vh]  flex justify-center items-center">
+                <div class="body-box w-[75%] py-6 min-h-[150vh] flex flex-col gap-7  justify-center">
+                    <h1 class="text-[40px] text-black/80 font-['Manrope'] font-semibold">ЧЕЛОВЕЧЕСКИЕ РЕСУРСЫ</h1>
+                    <h3 class="text-[25px] text-black/80 font-['Manrope'] font-semibold">Человеческие Ресурысы</h3>
+                    <div class="text-[18px] text-black/80 w-[95%]">
+                        Наша цель, как команды отдела кадров Variteks, состоит в том, чтобы привлечь в компанию нужных
+                        людей,
+                        поддержать,
+                        раскрыть потенциал и повысить их ценность, чтобы наша компания могла достичь своих целей. Наш
+                        принцип - быть
+                        справедливыми во всех правах, предоставляемых сотрудникам. Отдел кадров компании Variteks с 1958
+                        года имеет
+                        стратегическое значение благодаря нашему антропоцентрическому подходу к управлению. Мы рады
+                        обеспечить
+                        справедливую и
+                        ориентированную на результат рабочую среду для наших сотрудников с помощью наших
+                        последовательных процедур и
+                        практик,
+                        соблюдая правила этики, равенства и конфиденциальности.
+                    </div>
+                    <div class="w-full min-h-[60vh]"><img
+                            src="/image/managmentHtml/managmentImg/selectPage5.333d3e445817a45cd598.png"
+                            class="w-full h-full object-cover" alt=""></div>
+                    <h2 class="text-[25px] text-black/80 font-['Manrope'] font-semibold">Образование</h2>
+                    <p class="text-[18px] text-black/80 w-[95%]">
+                        Каждый человек в семье Variteks оценивается на лучших позициях, где он может реализовать свои
+                        способности. С целью
+                        приобретения членства семьи, когда к нам присоединяется новый друг, Variteks предоставляет всю
+                        необходимую поддержку под
+                        названием "Ориентационное обучение".
+                    </p>
+                    <p class="text-[18px] text-black/80 w-[95%]">
+                        Помимо их собственных требований, обучение наших сотрудников определяется их руководителями и
+                        отделом кадров. Для
+                        улучшения профессиональных навыков и компетенций организуются соответствующие тренинги,
+                        учитывающие личные запросы и
+                        потребности.
+                    </p>
+                    <h2 class="text-[25px] text-black/80 font-['Manrope'] font-semibold">Производительность</h2>
+                    <p class="text-[18px] text-black/80 w-[95%]">
+                    Наша компания, тщательно следящая за эффективностью работы, оценивает результаты деятельности своих сотрудников не реже
+                    двух раз в год. При окончательной оценке в конце года оценки эффективности работы увязываются с достаточно
+                    организованной системой премирования после тонкой проработки.
+
+                    </p>
+                    <p class="text-[18px] text-black/80 w-[95%]">
+                    Все идеи, повышающие эффективность работы наших сотрудников, имеют большое значение. По этому поводу не реже двух раз в
+                    год проводятся опросы, направленные на повышение производительности; эффективность работы оценивается путем оценки не
+                    только сотрудника, но и компании. Кроме того, для высокоэффективных сотрудников предусмотрено планирование карьеры.
+                    </p>
+                    <h2 class="text-[25px] text-black/80 font-['Manrope'] font-semibold">Мероприятия</h2>
+                    <p class="text-[18px] text-black/80 w-[95%]">
+                    Хотя мы подчеркиваем, насколько важна для нашей компании концепция семьи, независимо от подчиненного,
+                    внутрикорпоративные мероприятия, повышающие мотивацию, проводятся часто для того, чтобы все наши сотрудники были
+                    счастливы, независимо от их обязанностей, и чтобы наши сотрудники не просто занимались делом, а работали так, как будто
+                    они занимаются своим делом.                    
+                    </p>
+                    <h2 class="text-[25px] text-black/80 font-['Manrope'] font-semibold">Career Opportunity</h2>
+                    <div class="w-full h-[8vh] flex gap-3">
+                          <a href="#" class="w-[200px] cursor-pointer flex justify-center items-center rounded-md text-white hover:border-2 hover:border-red-600 hover:bg-white hover:text-red-600 duration-300 py-3 bg-red-600">Kariyer.net</a>
+                        <a href="#"
+                            class="w-[200px] cursor-pointer rounded-md flex justify-center items-center text-white hover:border-2 hover:border-red-600 hover:bg-white hover:text-red-600 duration-300 py-3 bg-red-600">Elman.net</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 
+
+
+
+
+Производительность
+Наша компания, тщательно следящая за эффективностью работы, оценивает результаты деятельности своих сотрудников не реже двух раз в год. При окончательной оценке в конце года оценки эффективности работы увязываются с достаточно организованной системой премирования после тонкой проработки.
+
+Все идеи, повышающие эффективность работы наших сотрудников, имеют большое значение. По этому поводу не реже двух раз в год проводятся опросы, направленные на повышение производительности; эффективность работы оценивается путем оценки не только сотрудника, но и компании. Кроме того, для высокоэффективных сотрудников предусмотрено планирование карьеры.
+
+Мероприятия
+Хотя мы подчеркиваем, насколько важна для нашей компании концепция семьи, независимо от подчиненного, внутрикорпоративные мероприятия, повышающие мотивацию, проводятся часто для того, чтобы все наши сотрудники были счастливы, независимо от их обязанностей, и чтобы наши сотрудники не просто занимались делом, а работали так, как будто они занимаются своим делом. -->
+
+        <section>
+            <footer>
+                <div class="footer-container flex justify-evenly pt-6 gap-10">
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Корпоративный</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Управление-персоналом</a></li>
+                        <li><a href="#">Вход в систему для дилеров</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сведения о компании РУ</a></li>
+                        <li><a href="#">Наша Политика в Отношении Персональных Данных</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Наша Продукция</li>
+                        <li><a href="#">Ортопедические Издели</a></li>
+                        <li><a href="#">Антиварикозные Изделия</a></li>
+                        <li><a href="#">Липосакционные корсеты</a></li>
+                        <li><a href="#">На заказ</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Новости</li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Анонсы</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Каталог</li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Контакты</li>
+                        <li><a href="#">Офис</a></li>
+                        <li><a href="#">Ташкент, ул. Ш.Руставели, 56-3</a></li>
+                        <li><a href="Tel:+998 95 511 20 22">Variteks Medikal: +998 95 511 20 22</a></li>
+                        <li><a href="MailTo:info@variteks.com">info@variteks.com</a></li>
+                        <li><a href="#">Copryright © Variteks 2023 | Защита авторских прав.</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

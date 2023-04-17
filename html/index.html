@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variteks</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="jpg" href="/image/logoImg/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <style>
+        
+#myDIV {
+    animation: mymove 1s infinite;
+    z-index: 999;
+    position: absolute;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 0 3px 10px rgb(202, 1, 1);
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <section>
+            <nav class="w-full px-8 min-h-[10vh] justify-center flex bg-white/60 z-[997] fixed">
+                <div class="logo w-[40%] min-h-[10vh] gap-4 justify-center flex items-center">
+                    <div>
+                        <a href="#"><img src="/image/logo/Без названия (1).png" class="w-[200px]" alt="logo"></a>
+                    </div>
+                    <a href="#">
+                        <div
+                            class="px-4 py-5 text-[18px] text-white h-[25px] hover:border-[1.5px] hover:border-red-500 duration-300 hover:bg-white hover:text-red-500 flex justify-center items-center rounded-md bg-red-700">
+                            Cвяжитесь с нами
+                        </div>
+                    </a>
+                </div>
+                <div class="menu w-[50%] min-h-[10vh] flex justify-center items-center">
+                    <ul class="text-[18px] text-red-500 flex gap-1 z-[999]">
+                        <li><a href="./aboutUs.html"
+                                class="hover:text-white duration-300 w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">О
+                                нас</a></li>
+                        <li><a href="#" id="href-link"
+                                class="w-[180px] hover:text-white duration-300 justify-center items-center rounded-md hover:bg-red-600 flex"
+                                onclick="hrefLink()">Наша продукция</a>
+                        </li>
+                        <li><a href="blog.html"
+                                class="hover:text-white duration-300  w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">Блог</a>
+                        </li>
+                        <li><a href="#"
+                                class="w-[110px] justify-center duration-300 hover:text-white items-center rounded-md hover:bg-red-600 flex"
+                                onclick="Contact()">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="logo-branding w-[20%] min-h-[10vh] flex justify-center items-center text-red-500">
+                    <div class="text-[18px] flex gap-3 items-center">
+                        <a href="./navbar/search.html"
+                            class="w-[45px] rounded-md flex justify-center items-center hover:bg-red-600 hover:text-white duration-300 h-[33px]"><i
+                                class="fas fa-search"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <div
+                            class="langugage w-[50px] h-[25px] rounded-md cursor-pointer flex-col relative text-white bg-red-500 flex justify-center items-center gap-1">
+                            <div class="far h-[25px] flex text-[13px] justify-center items-center gap-1 px-3"
+                                onclick="languageToggle()">
+                                <span id="lang">RU</span>
+                                <i class="chevron fas fa-chevron-down text-[10px]"></i>
+                            </div>
+                            <div class="language-menu w-full h-[45px] absolute top-[110%] z-[999] bg-red-500">
+                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">RU</div>
+                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">UZ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div class="link w-full min-h-[90vh] flex justify-evenly pt-[80px] gap-4">
+            <div class="link-item">
+                <ul class=" flex flex-col gap-1">
+                    <li class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-[#fff] text-[20px]" ><a href="./production/production.html"
+                             >Ортопедические
+                            Изделия</a></li>
+                    <li class="mt-5 hover:text-red-600"><a href="./production/product.html">Воротники Для Фиксации <br>
+                            Шейных Позвонков</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Брюшные Корсеты</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Наколенники</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Ортопедические Подушки</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Бандажи Для Плечевого И <br>
+                            Локтевого Суставов</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Ортопедические Подушки</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Поясничные Корсеты</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Бандажи И Шины Для Руки</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Шины-Бандажи На Запястье</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Бандажи Для Голеностопного</a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Сустава И Стопы </a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Сустава И Стопы
+                    Силиконовая Продукция </a></li>
+                    <li class="hover:text-red-600"><a href="./production/product.html">Эластичные Бандажи И Другая Продукция </a></li>
+                </ul>
+            </div>
+            <div class="link-item">
+                <ul class="text-[16px] flex flex-col gap-1">
+                    <li class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[20px]"><a href="./antiVaricose/antiVaricose.html" >Антиварикозные
+                            Изделия</a></li>
+                    <li class="mt-5 hover:text-red-600"><a href="./antiVaricose/Compression.html">Комплект Металлический Для <br> Надевания Чулок</a>
+                    </li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Компрессионные Гольфы</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Класс I</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Класс II</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Класс III</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Антиэмболические изделия</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Лимфедеме изделия</a></li>
+                    <li class=" hover:text-red-600"><a href="./antiVaricose/Compression.html">Эластичные Изделия</a></li>
+                </ul>
+            </div>
+            <div class="link-item">
+                <ul class="text-[16px] flex flex-col gap-1">
+                    <li class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]"><a href="./Liposuction/Liposuction.html"  >Липосакционные
+                            Корсеты</a></li>
+                    <li class="hover:text-red-600 mt-5"><a href="./Liposuction/Liposuction-page.html" >Подтяжка лица</a></li>
+                    <li class="hover:text-red-600"><a href="./Liposuction/Liposuction-page.html" >Липосакции</a></li>
+                    <li class="hover:text-red-600"><a href="./Liposuction/Liposuction-page.html" >Абдоминопластика</a></li>
+                    <li class="hover:text-red-600"><a href="./Liposuction/Liposuction-page.html" >Увеличение Уменьшение Груди</a></li>
+                    <li class="hover:text-red-600"><a href="./Liposuction/Liposuction-page.html" >Мужские Корсеты</a></li>
+                    <li class="hover:text-red-600"><a href="./Liposuction/Liposuction-page.html" >Вспомогательные продукты</a></li>
+                </ul>
+            </div>
+            <div class="link-item">
+                <ul class="text-[13px] flex flex-col gap-1">
+                    <li class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]" ><a href="./LastCategory/last-category.html" >Антиварикозные
+                            Изделия на заказ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="contactMenu w-[280px]  min-h-[15vh] bg-white flex-col mt-[46px] pl-4  flex justify-evenly rounded-lg left-[67%] text-red-500 text-[14px]">
+            <div class="">
+                <a href="contact/connect.html" class="text-[18px] text-black hover:text-red-600">Связаться с нами</a>
+            </div>
+            <div class="">
+                <a href="contact/managemant.html" class="text-[18px] text-black hover:text-red-600">Управление-персоналом</a>
+            </div>
+        </div>
+        <div class="swiper swiper-container">
+            <div class="swiper-wrapper flex gap-0">
+                <div
+                    class="swiper-slide swipers slideOne1 bg-[url('/image/header-image/slider-3.jpg')] w-full min-h-[100vh]">
+                    <div class="">
+                        <img src="/image/header-image/bgImage.png" class="w-[100%] top-[-10%] h-[100vh] absolute"
+                            alt="">
+                        <span
+                            class="absolute text-start text-[35px] top-[12%] right-[2%] text-white w-[50%] flex justify-center items-center">
+                            ТЕБЕ НЕОБХОДИМО ДВИГАТЬСЯ ДАЛЬШЕ ПРИ ЛЮБЫХ УСЛОВИЯХ.
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide swipers slideOne relative">
+                    <div class="">
+                        <img src="/image/header-image/bgImage.png" class="w-[100%]  h-[100vh] top-[-10%] absolute"
+                            alt="">
+                        <span
+                            class="absolute text-start text-[35px] top-[12%] right-[2%] text-white w-[53%] flex justify-center items-center">
+                            ENJOYING THE LIFE ТЕБЕ НЕОБХОДИМО ДВИГАТЬСЯ ДАЛЬШЕ НАСЛАЖДАЯСЬ ЖИЗНЬЮ.
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide swipers slideTwo text-black relative">
+                    <div class="">
+                        <img src="/image/header-image/bgImage.png" class="w-[100%]  h-[100vh] top-[-10%] absolute"
+                            alt="">
+                        <span
+                            class="absolute text-start text-[35px] top-[12%] right-[2%] text-white w-[50%] flex justify-center items-center">
+                            ТЕБЕ НЕОБХОДИМО ДВИГАТЬСЯ ДАЛЬШЕ ПРЕКРАСНЫМ ДНЕМ
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide swipers slideThree relative">
+                    <div class="">
+                        <img src="/image/header-image/bgImage.png" class="w-[100%]  h-[100vh] top-[-10%] absolute"
+                            alt="">
+                        <span
+                            class="absolute text-start text-[35px] top-[12%] right-[2%] text-white w-[50%] flex justify-center items-center">
+                            ТЕБЕ НЕОБХОДИМО ДВИГАТЬСЯ ДАЛЬШЕ ИМЕЯ СВОЙ СОБСТВЕННЫЙ СТИЛЬ.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" ></div>
+        </div>
+        <section>
+            <div class="text-img-container w-full min-h-[90vh] bg-white flex py-10">
+                <div class="text-img_right w-[60%] min-h-[90vh] flex flex-col gap-3 text-[16px] justify-center pl-10">
+                    <h2 class="text-[50px] font-bold">Кто такой Варитекс<span class="text-red-500">?</span></h2>
+                    <p class="text-[16px] text-gray-800">
+                        О нас
+                        <br>
+                        В 1958 году образовалась компания Standart Kortex по производству медицинской и гигиенической
+                        продукции. <br>
+                    </p>
+                    <p>
+                        В 1958 году к группе присоединился Variteks Ortopedi Sanayi A.S., корпорация, ставшая лидером в
+                        своей области по всей
+                        Турции.
+                    </p>
+                    <p>
+                        На протяжении 65 лет, с момента основания и до сегодняшнего дня, продукция компании отличается
+                        высоким качеством,
+                        постоянным улучшениям изделий и соответствует мировым стандартам в своей области. Главным
+                        фактором и очевидным успехом
+                        компании является высокое качество по максимально доступной цене и контроль производства от
+                        самого начала до
+                        потребителя.Компания Variteks Ortopedi Sanayi A.S. 64 года назад из небольшой мастерской выросла
+                        в большой завод
+                        площадью 16000 квадратных метров на территории города Стамбул и обладает современным
+                        производством,
+                        высокопрофессиональным штатом сотрудников, инновационным опытно – конструкторским отделом и
+                        удовлетворяет потребности
+                        рынка не только Турции, но более чем в 70 странах мира, в первую очередь европейских.
+                    </p>
+                    <p>
+                        Мы уверены, что продукция марки VARITEKS и STANDARD KORSTEX станет правильным решением при
+                        выборе медицинских и
+                        ортопедических изделий.
+                    </p>
+                    <a href="#">
+                        <div
+                            class="px-2 py-3 hover:border-red-500 duration-300 hover:bg-white hover:text-red-500 hover:border-[1.5px] flex justify-center items-center bg-red-500 rounded-md text-white text-[30px]">
+                            Дополнительная Информация
+                        </div>
+                    </a>
+                </div>
+                <div class="text-img_left w-[40%] min-h-[80vh] justify-center items-center flex">
+                    <div class="w-[90%] h-[70vh] bg-cover  bg-no-repeat bg-[url('/image/bodyImage/main-336f3315.png')]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <a href="#" class="w-[300px] flex justify-center items-center py-3 mx-auto text-[25px] bg-red-600 rounded-md text-white">Поиск</a>
+        </section>
+        <section>
+            <div class="bgImageContainer w-full min-h-screen flex justify-center items-center py-4">
+                <div
+                    class="relative">
+                    <img src="/image/indexhtml/variteksrus-c982b630.jpg" class="" alt="">
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[33.5%] left-[50.6%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full  top-[40.5%] left-[54.3%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full  top-[41.8%] left-[49%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700  top-[62.8%] left-[53%] rounded-full flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700  top-[45.6%] left-[45%] rounded-full flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="Брюшные корсеты" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full  top-[54.4%] left-[34%] flex hover:bg-black duration-300 absolute" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full  top-[57.1%] left-[48.6%] flex hover:bg-black duration-300 absolute" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[59.5%] left-[53%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[69.3%] left-[49%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[74.1%] left-[54%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full flex top-[78%] left-[47.5%] hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[81.1%] left-[53.9%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[87%] left-[45.2%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                    <a href="./production/product.html" class="shadow w-[1.2%] h-[1.8%] bg-red-700 rounded-full top-[88.3%] left-[54.4%] flex hover:bg-black absolute duration-300" id="myDIV"></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="text-slider-container w-full min-h-[60vh]">
+                <div class="text-slider w-full min-h-[60vh] flex">
+                    <div class="right w-[55%] min-h-[45vh] pl-[60px] flex flex-col pt-[24px] gap-4">
+                        <h1 class="text-[50px] text-red-600">Новая продукция</h1>
+                        <p class="text-[18px] text-black/70">
+                            Наша научно-исследовательская деятельность продолжается непрерывно, чтобы наши продукты
+                            оставались актуальными и не
+                            отставали от сегодняшнего времени, когда изменения и развитие ускоряются во всех областях.
+                            Разрабатывая существующие и
+                            разрабатывая новые продукты, мы руководствуемся принципом совместной поддержки и комфорта.
+                            Превращение некоторых наших
+                            маленьких штрихов в большие преимущества делает нас счастливыми и дает нам мотивацию на
+                            будущее.
+                        </p>
+                    </div>
+                    <div class="swiper swiperComp left w-[45%] min-h-[80vh] pt-[50px] relative">
+                        <div class="swiper-wrapper wrap  min-h-[80vh]">
+                            <div class="swiper-slide  text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/132_SGP5432.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                            <div class="swiper-slide text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/202_SGP4549.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                            <div class="swiper-slide text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/203_SGP4584_2.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                            <div class="swiper-slide text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/804_SGP3571.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                            <div class="swiper-slide text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/849_SGP3586.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                            <div class="swiper-slide text-center flex flex-col gap-5">
+                                <div class="overflow-hidden h-[330px]">
+                                    <img src="/image/sliderImg/940_SGP8296.jpg" alt="">
+                                </div>
+                                <h2 class="text-red-600 text-[18px]">КОД 940</h2>
+                                <a href="#"
+                                    class="w-[120px] bg-red-600 rounded-md mx-auto h-[40px] text-white text-[14px] flex justify-center items-center">Подробности</a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next bg-red-600 absolute top-[50%] left-[94%]"></div>
+                        <div class="swiper-button-prev bg-red-600 absolute top-[50%] left-[1%]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
+                <div class="footer-container flex justify-evenly pt-6 gap-10">
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Корпоративный</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Управление-персоналом</a></li>
+                        <li><a href="#">Вход в систему для дилеров</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сведения о компании РУ</a></li>
+                        <li><a href="#">Наша Политика в Отношении Персональных Данных</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Наша Продукция</li>
+                        <li><a href="#">Ортопедические Издели</a></li>
+                        <li><a href="#">Антиварикозные Изделия</a></li>
+                        <li><a href="#">Липосакционные корсеты</a></li>
+                        <li><a href="#">На заказ</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Новости</li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Анонсы</a></li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Каталог</li>
+                    </ul>
+                    <ul class="text-white text-[12px] flex flex-col gap-2">
+                        <li class="text-red-600 text-[16px] font-semibold">Контакты</li>
+                        <li><a href="#">Офис</a></li>
+                        <li><a href="#">Ташкент, ул. Ш.Руставели, 56-3</a></li>
+                        <li><a href="Tel:+998 95 511 20 22">Variteks Medikal: +998 95 511 20 22</a></li>
+                        <li><a href="MailTo:info@variteks.com">info@variteks.com</a></li>
+                        <li><a href="#">Copryright © Variteks 2023 | Защита авторских прав.</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

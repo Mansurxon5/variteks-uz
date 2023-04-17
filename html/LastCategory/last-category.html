@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Variteks</title>
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="icon" type="jpg" href="/image/logoImg/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+
+</head>
+
+<body>
+
+      <div class="container-fluid font-['Manrope']">
+            <section>
+                  <nav class="w-full px-8 min-h-[10vh] justify-center flex bg-white/60 z-[997] fixed">
+                        <div class="logo w-[40%] min-h-[10vh] gap-4 justify-center flex items-center">
+                              <div>
+                                    <a href="../index.html"><img src="/image/logo/Без названия (1).png" class="w-[200px]" alt="logo"></a>
+                              </div>
+                              <a href="#">
+                                    <div
+                                          class="px-4 py-5 text-[18px] text-white h-[25px] hover:border-[1.5px] hover:border-red-500 duration-300 hover:bg-white hover:text-red-500 flex justify-center items-center rounded-md bg-red-700">
+                                          Cвяжитесь с нами
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="menu w-[50%] min-h-[10vh] flex justify-center items-center">
+                              <ul class="text-[18px] text-red-500 flex gap-1 z-[999]">
+                                    <li><a href="../aboutUs.html"
+                                                class="hover:text-white duration-300 w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">О
+                                                нас</a></li>
+                                    <li><a href="#" id="href-link"
+                                                class="w-[180px] hover:text-white duration-300 justify-center items-center rounded-md hover:bg-red-600 flex"
+                                                onclick="hrefLink()">Наша продукция</a>
+                                    </li>
+                                    <li><a href="../blog.html"
+                                                class="hover:text-white duration-300  w-[70px] justify-center items-center rounded-md hover:bg-red-600 flex">Блог</a>
+                                    </li>
+                                    <li><a href="#"
+                                                class="w-[110px] justify-center duration-300 hover:text-white items-center rounded-md hover:bg-red-600 flex"
+                                                onclick="Contact()">Контакты</a></li>
+                              </ul>
+                        </div>
+                        <div class="logo-branding w-[20%] min-h-[10vh] flex justify-center items-center text-red-500">
+                              <div class="text-[18px] flex gap-3 items-center">
+                                    <a href="../navbar/search.html"
+                                          class="w-[45px] rounded-md flex justify-center items-center hover:bg-red-600 hover:text-white duration-300 h-[33px]"><i
+                                                class="fas fa-search"></i></a>
+                                    <a href="#"><i class="fab fa-telegram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <div
+                                          class="langugage w-[50px] h-[25px] rounded-md cursor-pointer flex-col relative text-white bg-red-500 flex justify-center items-center gap-1">
+                                          <div class="far h-[25px] flex text-[13px] justify-center items-center gap-1 px-3"
+                                                onclick="languageToggle()">
+                                                <span id="lang">RU</span>
+                                                <i class="chevron fas fa-chevron-down text-[10px]"></i>
+                                          </div>
+                                          <div class="language-menu w-full h-[45px] absolute top-[110%] z-[999] bg-red-500">
+                                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">RU</div>
+                                                <div class="lang-item w-full h-[22px] hover:bg-blue-500 pl-1">UZ</div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </nav>
+            </section>
+            <div class="link w-full min-h-[90vh] flex justify-evenly pt-[80px] gap-4">
+                  <div class="link-item">
+                        <ul class=" flex flex-col gap-1">
+                              <li
+                                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-[#fff] text-[20px]">
+                                    <a href="../production/production.html">Ортопедические
+                                          Изделия</a>
+                              </li>
+                              <li class="mt-5 hover:text-red-600"><a href="../production/product.html">Воротники Для
+                                          Фиксации <br>
+                                          Шейных Позвонков</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Брюшные Корсеты</a>
+                              </li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Наколенники</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Ортопедические
+                                          Подушки</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Бандажи Для Плечевого
+                                          И <br>
+                                          Локтевого Суставов</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Ортопедические
+                                          Подушки</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Поясничные Корсеты</a>
+                              </li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Бандажи И Шины Для
+                                          Руки</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Шины-Бандажи На
+                                          Запястье</a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Бандажи Для
+                                          Голеностопного</a>
+                              </li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Сустава И Стопы </a>
+                              </li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Сустава И Стопы
+                                          Силиконовая Продукция </a></li>
+                              <li class="hover:text-red-600"><a href="../production/product.html">Эластичные Бандажи И
+                                          Другая
+                                          Продукция </a></li>
+                        </ul>
+                  </div>
+                  <div class="link-item">
+                        <ul class="text-[16px] flex flex-col gap-1">
+                              <li
+                                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[20px]">
+                                    <a href="../antiVaricose/antiVaricose.html">Антиварикозные
+                                          Изделия</a>
+                              </li>
+                              <li class="mt-5 hover:text-red-600"><a href="../antiVaricose/Compression.html">Комплект
+                                          Металлический
+                                          Для <br> Надевания Чулок</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Компрессионные
+                                          Гольфы</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс I</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс II</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Класс III</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a
+                                          href="../antiVaricose/Compression.html">Антиэмболические
+                                          изделия</a>
+                              </li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Лимфедеме
+                                          изделия</a></li>
+                              <li class=" hover:text-red-600"><a href="../antiVaricose/Compression.html">Эластичные
+                                          Изделия</a></li>
+                        </ul>
+                  </div>
+                  <div class="link-item">
+                        <ul class="text-[16px] flex flex-col gap-1">
+                              <li
+                                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]">
+                                    <a href="../Liposuction/Liposuction.html">Липосакционные
+                                          Корсеты</a>
+                              </li>
+                              <li class="hover:text-red-600 mt-5"><a
+                                          href="../Liposuction/Liposuction-page.html">Подтяжка лица</a>
+                              </li>
+                              <li class="hover:text-red-600"><a
+                                          href="../Liposuction/Liposuction-page.html">Липосакции</a></li>
+                              <li class="hover:text-red-600"><a
+                                          href="../Liposuction/Liposuction-page.html">Абдоминопластика</a>
+                              </li>
+                              <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Увеличение
+                                          Уменьшение
+                                          Груди</a></li>
+                              <li class="hover:text-red-600"><a href="../Liposuction/Liposuction-page.html">Мужские
+                                          Корсеты</a></li>
+                              <li class="hover:text-red-600"><a
+                                          href="../Liposuction/Liposuction-page.html">Вспомогательные
+                                          продукты</a></li>
+                        </ul>
+                  </div>
+                  <div class="link-item">
+                        <ul class="text-[13px] flex flex-col gap-1">
+                              <li
+                                    class="text-red-600 border-b-2 border-b-red-600 hover:bg-red-600 duration-300 p-2 hover:rounded-md hover:text-white text-[18px]">
+                                    <a href="../LastCategory/last-category.html">Антиварикозные
+                                          Изделия на заказ</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+            <div
+                  class="contactMenu w-[280px]  min-h-[15vh] bg-white flex-col mt-[46px] pl-4  flex justify-evenly rounded-lg left-[67%] text-red-500 text-[14px]">
+                  <div class="">
+                        <a href="../contact/connect.html" class="text-[18px] text-black hover:text-red-600">Связаться с
+                              нами</a>
+                  </div>
+                  <div class="">
+                        <a href="../contact/managemant.html"
+                              class="text-[18px] text-black hover:text-red-600">Управление-персоналом</a>
+                  </div>
+            </div>
+
+            <section>
+                  <div class="product-body-container">
+                        <div
+                              class="product-body w-full min-h-[70vh] bg-no-repeat  bg-[url('/image/lastCategory/bgImg/bg-cac680bc.jpg')]">
+                        </div>
+                        <div class="w-full flex flex-col justify-center pl-32">
+                              <h2 class="text-[45px] w-[60%] font-semibold">Компрессионный Трикотаж Изготовленные На
+                                    Заказ</h2>
+                              <p class="w-[88%]">
+                                    Само слово «варикоз» происходит от латинского «varix» - вздутие. . Расширение вен на
+                                    ногах в результате их растяжения и
+                                    изгиба неправильным образом называется варикозным расширением вен. Компрессионный
+                                    трикотаж — специальные гольфы, чулки и
+                                    колготки, где на лодыжку оказывается сильное давление, и по мере подъёма вверх по
+                                    ноге, давление постепенно уменьшается.
+                                    Применение сильнейшего давления на лодыжке в соответствии со стандартом и
+                                    постепенное снижение этого давления по мере
+                                    подъема вверх по ноге помогает мышцам ног выполнять свои механические функции
+                                    естественным образом и способствует
+                                    циркуляции крови, перемещая ее вверх.
+                              </p>
+                        </div>
+                        <div class="flex w-full gap-0 items-center py-5 ">
+                              <div class="swiper LastCategory w-[30%] min-h-[60vh]">
+                                    <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><img src="/image/lastCategory/slider/1-d5c60bf6.jpg"
+                                                      class="rounded-xl" alt="">
+                                          </div>
+                                          <div class="swiper-slide"><img src="/image/lastCategory/slider/2-4db31457.jpg"
+                                                      class="rounded-xl" alt="">
+                                          </div>
+                                    </div>
+                                    <div class="swiper-button-next flex justify-center items-center bg-red-400"></div>
+                                    <div class="swiper-button-prev flex justify-center items-center bg-red-400"></div>
+                              </div>
+                              <div class="w-[55%] flex flex-col gap-3">
+                                    <h2 class="text-[35px] text-red-500">Показания</h2>
+                                    <p class="text-[30px] w-[80%] font-semibold">Почему варикозный трикотаж
+                                          изготавливается на заказ:</p>
+                                    <div class="w-[70%] ">
+                                          Чулки от варикоза производятся в соответствии со стандартами. Однако каждый
+                                          человек имеет уникальную анатомию.
+                                          Исследования показывают, что 20% пользователей компрессионных чулок
+                                          анатомически не соответствуют стандартным размерам
+                                          тела. Наиболее важным моментом для получения пользы от компрессионных чулок
+                                          является использование изделия
+                                          соответствующего размера. Люди, которые не могут использовать компрессионные
+                                          чулки стандартного размера, должны
+                                          проконсультироваться со специалистом и использовать компрессионные чулки,
+                                          изготовленные в соответствии с их анатомией.
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="text-[18px] pl-24 pr-7 py-4 flex flex-col gap-6 justify-center">
+                              <h2 class="text-[32px] font-semibold">Преимущества чулок при варикозе, изготовленных на
+                                    заказ:</h2>
+                              <p>Благодаря специальным компрессионным чулкам, изготовленным специально для вашей ноги,
+                                    обеспечивается максимальная
+                                    эффективность, так как компрессия оказывается на нужные точки под нужным градусом.
+                              </p>
+                              <p>Для кого предназначены чулки при варикозе, изготовленные на заказ?</p>
+                              <p>
+                                    Если ваши размеры ноги не соответствуют стандартной таблице измерений, если обхват
+                                    ноги широкий-узкий или
+                                    длинный-короткий выходит за рамки стандартов, если есть значительная разница между
+                                    обхватом правой и левой ноги, если
+                                    длина и обхват ноги не совместимы друг с другом, то целесообразно использовать чулки
+                                    при варикозе, изготовленные на
+                                    заказ.
+                              </p>
+                              <p>Как снять мерки для индивидуального изготовления варикозных чулок:</p>
+                              <p>Измерения окружности и длины зависят от модели чулок (ниже колена, выше колена,
+                                    колготки). Для каждой точки давления
+                                    должны быть проведены отдельные измерения. Наша компания проводит обучение наших
+                                    дистрибьюторов или сотрудников аптек по
+                                    снятию размеров ног пациентов для изготовления чулок при варикозе на заказ.
+                                    Сотрудникам наших дистрибьюторов выдается
+                                    сертификат об участии в тренинге.</p>
+                              <h2>Почему Variteks изготавливает варикозные чулки на заказ:</h2>
+                              <p>Компания Variteks достигла возможности производить варикозные чулки на заказ благодаря
+                                    своему более чем 60-летнему опыту
+                                    и производственным мощностям, которые недавно увеличились. Тот факт, что данные
+                                    изделия заказываются пациентом из-за
+                                    рубежа, и, следовательно, время на доставку, высокая стоимость, побудили нас к
+                                    производству в этом направлении..</p>
+                              <p>В дополнение к машинному парку, необходимому для производства чулок при варикозе на
+                                    заказ, испытание давлением, которое
+                                    является одним из самых важных вопросов в компрессионных чулках, проводится на нашей
+                                    персональной машине для испытания
+                                    компрессии.</p>
+                              <p>Эта услуга первой и единственной турецкой компании Variteks, , производящей на заказ
+                                    чулки при варикозе, появилась в
+                                    результате проекта, поддержанного TÜBİTAK (Совет по научно-техническим исследованиям
+                                    Турции).</p>
+                              <h2 class="text-[32px] font-semibold">
+                                    Как следует чистить и стирать компрессионный трикотаж, изготовленный на заказ:
+                              </h2>
+                              <p>Его следует стирать при температуре воды 30-градусов с мылом вручную без трения.
+                                    Стирать в стиральной машине запрещено.
+                                    Сушат на полотенце при комнатной температуре. Не сушить в сушильной машине, не
+                                    подвергать химчистке, не отжимать, не
+                                    гладить, не использовать стиральный порошок, смягчитель и отбеливатель.</p>
+                              <div class="text-[55px] text-red-600 flex gap-8">
+                                    <i class="fab fa-telegram"></i>
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                              </div>
+                              <h2 class="text-[35px] font-semibold text-red-600">Характеристики изделия</h2>
+                              <img src="/image/lastCategory/new-design-4f548c65.jpg" class="w-[200px]" alt="">
+                        </div>
+                  </div>
+            </section>
+
+            <section>
+                  <footer>
+                        <div class="footer-container flex justify-evenly pt-6 gap-10">
+                              <ul class="text-white text-[12px] flex flex-col gap-2">
+                                    <li class="text-red-600 text-[16px] font-semibold">Корпоративный</li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Сертификаты</a></li>
+                                    <li><a href="#">Управление-персоналом</a></li>
+                                    <li><a href="#">Вход в систему для дилеров</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Сведения о компании РУ</a></li>
+                                    <li><a href="#">Наша Политика в Отношении Персональных Данных</a></li>
+                              </ul>
+                              <ul class="text-white text-[12px] flex flex-col gap-2">
+                                    <li class="text-red-600 text-[16px] font-semibold">Наша Продукция</li>
+                                    <li><a href="#">Ортопедические Издели</a></li>
+                                    <li><a href="#">Антиварикозные Изделия</a></li>
+                                    <li><a href="#">Липосакционные корсеты</a></li>
+                                    <li><a href="#">На заказ</a></li>
+                              </ul>
+                              <ul class="text-white text-[12px] flex flex-col gap-2">
+                                    <li class="text-red-600 text-[16px] font-semibold">Новости</li>
+                                    <li><a href="#">События</a></li>
+                                    <li><a href="#">Анонсы</a></li>
+                              </ul>
+                              <ul class="text-white text-[12px] flex flex-col gap-2">
+                                    <li class="text-red-600 text-[16px] font-semibold">Каталог</li>
+                              </ul>
+                              <ul class="text-white text-[12px] flex flex-col gap-2">
+                                    <li class="text-red-600 text-[16px] font-semibold">Контакты</li>
+                                    <li><a href="#">Офис</a></li>
+                                    <li><a href="#">Ташкент, ул. Ш.Руставели, 56-3</a></li>
+                                    <li><a href="Tel:+998 95 511 20 22">Variteks Medikal: +998 95 511 20 22</a></li>
+                                    <li><a href="MailTo:info@variteks.com">info@variteks.com</a></li>
+                                    <li><a href="#">Copryright © Variteks 2023 | Защита авторских прав.</a></li>
+                              </ul>
+                        </div>
+                  </footer>
+            </section>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="/script/script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+            AOS.init();
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+body, a, h1, h2, p {
+  font-family: "Manrope", sans-serif;
+}
+
+.language-menu {
+  scale: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  padding: 0 0 0 4px;
+}
+
+.language-menu.active-menu {
+  scale: 1;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  z-index: 999;
+}
+
+.boxxing nav {
+  position: fixed;
+}
+.boxxing nav a {
+  z-index: 999 !important;
+  position: relative;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100% !important;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 88% !important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swipers {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slideOne1 {
+  background: url(/image/header-image/slider-1.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slideOne {
+  background: url(/image/header-image/slider-2.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slideTwo {
+  background: url(/image/header-image/slider-3.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slideThree {
+  background: url(/image/header-image/slider-4.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  display: none !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 888;
+}
+.link .link-item a {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.link .link-item a:hover {
+  color: red;
+}
+
+.link.link-active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  scale: 1;
+  position: fixed;
+  min-height: 100vh;
+  background: #fff;
+  z-index: 977;
+}
+
+.contactMenu {
+  display: none !important;
+}
+
+.contactMenu.conta {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: fixed;
+  z-index: 977;
+}
+
+.navbar-active {
+  background: #fff;
+}
+
+.bgImageContainer .bgImage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bgImageContainer .bgImage a .imgAnime {
+  -webkit-animation: mymove 0.5s infinite;
+          animation: mymove 0.5s infinite;
+  position: absolute;
+}
+@-webkit-keyframes mymove {
+  50% {
+    -webkit-box-shadow: 0 0 12px #da0303;
+            box-shadow: 0 0 12px #da0303;
+  }
+}
+@keyframes mymove {
+  50% {
+    -webkit-box-shadow: 0 0 12px #da0303;
+            box-shadow: 0 0 12px #da0303;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  -webkit-box-shadow: 0 0 1px 2px rgb(197, 197, 197);
+          box-shadow: 0 0 1px 2px rgb(197, 197, 197);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  color: white;
+}
+
+.wrap img {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.wrap img:hover {
+  scale: 1.1;
+}
+
+.swiperComp {
+  width: 45%;
+  min-height: 80vh;
+  padding-top: 50px;
+}
+
+.footer-container {
+  width: 100%;
+  min-height: 50vh;
+  background: url(/image/footerImage/footer.099b618c655c466e50db.png) no-repeat center;
+  background-size: cover;
+}
+
+footer {
+  padding: 0;
+}
+footer .footer-container a {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+footer .footer-container a:hover {
+  color: red;
+}
+
+#href-blog {
+  border-radius: 0 0 12px 12px;
+}
